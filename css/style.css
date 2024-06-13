@@ -1,0 +1,124 @@
+html,
+body {
+    max-width: 830px;
+    width: 830px;
+    height: 830px;
+    border-radius: 20px;
+    background-color: white;
+    color: #3d4149;
+    /*font-family: 'Libre Franklin', sans-serif;*/
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.row {
+    width: 800px;
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-top: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    height: 100%;
+    border-color: none !important;
+    border-collapse: collapse;
+    /* Set the height of the card to 100% */
+}
+
+input#search {
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    width: 250px;
+    border: none;
+    border-left: 1px solid rgb(0, 0, 0, 0.1);
+    padding-left: 5px;
+    height: 55px;
+    background-color: transparent;
+}
+
+input#search::placeholder {
+    padding-left: 5px;
+    color: black;
+}
+
+input#search:focus {
+    outline: none;
+}
+
+.card.hidden {
+    display: none;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+
+.topnav {
+    overflow: hidden;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-size: 14px;
+}
+
+.topnav a:hover {
+    color: rgb(127, 82, 255);
+}
+
+div.nav {
+    margin-left: 35%;
+}
+
+.topnav a.active {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: 1.5%;
+}
+
+span.tag-span {
+    color: rgb(127, 82, 255);
+    background-color: rgb(246, 243, 255);
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 2px;
+}
+
+.comments-section {
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    padding-top: 20px;
+    color: gray;
+}
+
+#about .card {
+    border: none;
+}
+
+#about .col-lg-6 {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-left: none;
+    border-collapse: collapse;
+}
+
+section#intro-about {
+    padding: 20%;
+}
